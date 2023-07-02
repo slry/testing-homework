@@ -1,4 +1,5 @@
 module.exports = {
+  gridUrl: 'http://localhost:4444/wd/hub',
   sets: {
     desktop: {
       files: "test/hermione",
@@ -7,7 +8,7 @@ module.exports = {
 
   browsers: {
     chrome: {
-      automationProtocol: "devtools",
+      automationProtocol: "webdriver",
       desiredCapabilities: {
         browserName: "chrome",
       },
